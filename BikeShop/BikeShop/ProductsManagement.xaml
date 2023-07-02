@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:BikeShop"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProductsManagement">
+      Title="ProductsManagement"
+      Background="{StaticResource background}">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -31,11 +32,8 @@
                 
             </DataGrid>
             <!--Detail View-->
-            <StackPanel Grid.Column="1" Margin="5" DataContext="{Binding SelectedItem,ElementName=dataGrid}">
-                <StackPanel.Background>
-                    Gray
-                </StackPanel.Background>
-            
+            <StackPanel Grid.Column="1" Margin="5" DataContext="{Binding SelectedItem,ElementName=dataGrid}" Background="Snow">
+
                 <TextBlock Text="Product details" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="5"/>
                 <TextBlock Text="Title" Margin="5"/>
                 <TextBox Margin="5" Text="{Binding Title, Mode=TwoWay}"/>
