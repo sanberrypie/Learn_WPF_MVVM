@@ -10,7 +10,7 @@
 
     <StackPanel Margin="10" >
         <StackPanel Orientation="Horizontal">
-            <Button Content="Product" Width="100" Height="100" Margin="5"/>
+            <Button Content="Product" Width="100" Height="100" Margin="5" Click="Button_Click_2"/>
             <Button Content="Live Support" Width="100" Height="100" Margin="5" Click="Button_Click_1"/>
             <Button Content="Email Support" Width="100" Height="100" Margin="5" Click="Button_Click"/>
         </StackPanel>
